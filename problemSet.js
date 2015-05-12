@@ -15,6 +15,23 @@ function frameYourPhrase(phrase) {
    return "**********\n* Hello  *\n* World! *\n**********";
 }
 
+function frameYourPhrase(phrase) {
+    var frameLong = "";
+    var phraseToStun = ""
+    for (var i = phrase.length + 2; i > 0; i--){
+      frameLong+= "*";
+    }
+    
+    return frameLong + " \n*" + phrase + "*\n" + frameLong;
+};
+console.log(frameYourPhrase("Parker is Awesome!"));
+
+
+
+
+
+
+//----------------------------------------------------------------------
 function isPrime(num) {
     /*
       TODO: Write a functiont that decides if the integer number provided
