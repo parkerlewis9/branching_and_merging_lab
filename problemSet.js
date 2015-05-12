@@ -41,7 +41,16 @@ function isPrime(num) {
       If this is too challenging, hard code the first 15 prime numbers and
       return true if the number is in the list.
     */
-    return false;
+    if (num === 2) {
+      return true;
+    }
+    for (var i = 2; i < num/2; i++) {
+      var isPrime = true;
+      if(num % i === 0) {
+        return false;
+      };
+      return isPrime;
+    }
 }
 
 
